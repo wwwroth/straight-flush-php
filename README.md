@@ -2,14 +2,16 @@
 
 ### Running the Poker simulation
 
-Install dependencies by running `composer install` in the project root.
+First, install dependencies by running `composer install` in the project root.
+
+Then in the app root, run `php bin/console.php`
 
 ##### Arguments
-* --players= | How many players should be dealt between 2 and 6.
-* --verbose= | Verbose cmd output to display deck status as it's shuffled.
+* --players=N | How many players should be dealt between 2 and 6. Default is 5.
+* --verbose=1|0 | Verbose cmd output to display deck status as it's shuffled.
 
 ```
-➜  poker-assignment php bin/console.php --players=4
+➜ php bin/console.php --players=4
 [2020-12-09 10:12:24] [INFO] Player 0 dealt 2H
 [2020-12-09 10:12:24] [INFO] Player 0 dealt 5S
 [2020-12-09 10:12:24] [INFO] Player 0 dealt 3C
@@ -37,7 +39,7 @@ Install dependencies by running `composer install` in the project root.
 ```
 
 ```
-➜  poker-assignment php bin/console.php --players=2 --verbose=1
+➜ php bin/console.php --players=2 --verbose=1
 [2020-12-09 10:12:49] [INFO] Deck built
 [2020-12-09 10:12:49] [INFO] Deck state: Dealt 0: | Not Dealt 52: 2C 3C 4C 5C 6C 7C 8C 9C 10C JC QC KC AC 2D 3D 4D 5D 6D 7D 8D 9D 10D JD QD KD AD 2H 3H 4H 5H 6H 7H 8H 9H 10H JH QH KH AH 2S 3S 4S 5S 6S 7S 8S 9S 10S JS QS KS AS
 [2020-12-09 10:12:49] [INFO] Deck shuffled
