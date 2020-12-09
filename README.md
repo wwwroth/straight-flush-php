@@ -1,4 +1,4 @@
-# Poker Assignment
+# Straight-Flush PHP 
 
 ### Running the Poker simulation
 
