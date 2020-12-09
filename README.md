@@ -60,4 +60,14 @@ Then in the app root, run `php bin/console.php`
 ```
 
 ### Testing
-`./vendor/bin/phpunit tests`
+```
+./vendor/bin/phpunit tests
+
+PHPUnit 9.5.0 by Sebastian Bergmann and contributors.
+
+........                                                            8 / 8 (100%)
+
+Time: 00:00.010, Memory: 4.00 MB
+
+OK (8 tests, 8 assertions)
+```
